@@ -1,4 +1,4 @@
-import{ useLocalstorage } from "./useLocalStorage"
+import useLocalstorage  from "./useLocalStorage"
 
 
 export const useForm = (key,initialValue)=>{

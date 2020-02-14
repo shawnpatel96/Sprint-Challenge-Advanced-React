@@ -15,14 +15,17 @@ export default function AddPlayerForm(){
          <div>
              <form onSubmit={handleSubmit}>
                  <fieldset>
-                     <legend>Add New Player</legend>
+                     <label htmlFor="player">Add New Player</label>
                      <input
+                     id="player"
                      placeholder="player name"
                      value={player}
                      onChange={handleChanges}
                      name="player"
                      />
-                     <button type="submit">Submit New Player</button>
+                     <button 
+                     data-testid='button' 
+                     type="submit">Submit New Player</button>
                  </fieldset>
 
 
